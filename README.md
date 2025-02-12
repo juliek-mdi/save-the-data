@@ -7,7 +7,7 @@
     - When you start on a task, you should create a new branch named based on the task you're taking on and push any changes to that branch. When ready, you can open a Pull Request and tag a senior collaborator as a reviewer. Please also feel free to open new issues to either track your progress on a task or flag general obstacles to the team.
 - **Folder structure:**
     - For organizational purposes, we recommend creating separate folders for different tasks or domains, with a clear naming structure, such as [Jenny Bryan's naming convention](https://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf).
-- **Logging:** We use the `logging` package to output informative INFO, WARNING, and ERROR messages into .log files. Each log file will contain the name of the site being scraped and the date the scraping job was run so that files can be tracked. See more info on logging in the [documentation here](https://docs.python.org/3/library/logging.html). **Log files are not pushed to GitHub.**
+- **Logging:** For Python scraping, we use the `logging` package to output informative INFO, WARNING, and ERROR messages into .log files. Each log file will contain the name of the site being scraped and the date the scraping job was run so that files can be tracked. See more info on logging in the [documentation here](https://docs.python.org/3/library/logging.html). **Log files are not pushed to GitHub.**
 - **Reusable code:**
     - Any functions that are widely useful across scrapers (e.g. Selenium utilities like clicking a button, logger file creation, etc.) can be stored within `utils\utils.py`.
     - Import these functions into your code by adding this line in your Python code: `from utils import utils`
@@ -31,6 +31,7 @@
     - Date Scraped (final date if over period of time)
     - Date Modified (if editing an existing task)
     - URL(s) where data was scraped from
+    - (Where applicable) Unit of Analysis (e.g. individual, household, business, etc.)
     - Geographic Level of Data
     - Time Period of Data
     - Is the data disaggregated by race/ethnicity?

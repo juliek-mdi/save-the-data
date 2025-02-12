@@ -21,9 +21,16 @@ from urllib.parse import urljoin
 
 def create_logger(file_path, resource_name):
     '''
-    Create a new logger that will store relevant information in a log file. 
-    `file_path` and `resource_name` (what is being scraped) are used to create informatively named log files.
-    `file_path` should correspond to the file path of where the script is being run and so that the log file ends up in the same place.
+    Create a logger object for logging information and errors to a file and the console.
+
+    Parameters:
+    file_path: The file path where the log folder and accompanying files should be saved; should be same as the script's location.
+    resource_name: The name of the logger - by convention, can choose the name of the script to keep things organized.
+
+    
+    Returns:
+    logger: A logger object for logging information and errors.
+    
     '''
     # Get the current date and time for the log filename
     log_filename = f"{file_path}/logs/{resource_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
