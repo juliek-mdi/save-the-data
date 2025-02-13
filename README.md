@@ -3,7 +3,7 @@
 
 ## Set-up:
 - **GitHub:** 
-    - We use GitHub to collaborator across many different data preservation tasks. If you are new to GitHub, check out Urban's guide on [basic workflow](https://ui-research.github.io/reproducibility-at-urban/git-workflow.html).
+    - We use GitHub to collaborate across many different data preservation tasks. If you are new to GitHub, check out Urban's guide on [basic workflow](https://ui-research.github.io/reproducibility-at-urban/git-workflow.html).
     - When you start on a task, you should create a new branch named based on the task you're taking on and push any changes to that branch. When ready, you can open a Pull Request and tag a senior collaborator as a reviewer. Please also feel free to open new issues to either track your progress on a task or flag general obstacles to the team.
 - **Folder structure:**
     - For organizational purposes, we recommend creating separate folders for different tasks or domains, with a clear naming structure, such as [Jenny Bryan's naming convention](https://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf).
